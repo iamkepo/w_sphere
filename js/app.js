@@ -17,6 +17,8 @@ document.body.appendChild( renderer.domElement );
 
 const controls = new THREE.OrbitControls( camera, renderer.domElement );
 camera.position.set( 1, 0, 0 );
+controls.minDistance = 800;
+controls.maxDistance = 1500;
 controls.update();
 
 
